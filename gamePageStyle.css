@@ -1,0 +1,458 @@
+
+:root{
+    --ohs-green: rgba(197,206, 78,1);
+    --ohs-green-low-opacity: rgba(197,206, 78,0.15);
+    --description-color: rgba(170, 170, 170, 1);
+    --descriptionHover-color: rgba(200, 200, 200, 1);
+}
+
+/* //---------------------------------------------------------------// 
+//                          GAME PAGE                               //
+//------------------------------------------------------------------// */
+
+p {
+    font-family: "Poppins";
+}
+
+html, body {
+    margin: 0;
+    padding:0;
+    /* background: red; */
+}
+
+#backgroundColor{
+    background: linear-gradient(to bottom, black, rgb(30, 2, 2));
+        position: fixed;
+        width: 100%;
+        z-index: -3;
+        height: 100vh;
+}
+
+#gamePageHeader{
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+
+    min-height: 800px;
+
+    position: relative;
+
+    background-image: url("./images/AsuraVengeancePoster.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+}
+
+#gamePagePoster>img {
+    width: 100%;
+    margin:0;
+    margin-bottom: -5px;
+}
+
+#gameLogo{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+#gameLogo > img{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#gamePageInfo {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#platformAndReleaseDate {
+    font-family: "Poppins";
+    display: grid;
+    grid-template-areas: "a a";
+    padding: 40px;
+}
+
+#platformContainer{
+    text-align: left;
+    padding: 10px;
+    display: grid;
+    
+    grid-template-areas: "a a";
+    justify-self: left;
+
+    gap: 20px;
+}
+
+#prHeader{
+
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    align-self: center;
+}
+
+#platformIcons{
+    display: grid;
+
+    grid-template-areas: "a a";
+    align-self: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+#releaseDateContainer{
+    color: white;
+    text-align: right;
+    padding: 10px;
+
+    display: grid;
+    grid-template-areas: "a a";
+
+    justify-self: right;
+    gap: 20px;
+}
+
+#releaseDateText{
+    justify-self: center;
+    align-self: center;
+    color: var(--description-color);
+}
+
+#gamePageDescription{
+    color: var(--description-color);
+    font-family: "Poppins";
+    text-align: center;
+    padding: 40px;
+    font-size: 1.55rem;
+}
+
+#gamePageFeatureContainer{
+    color: white;
+}
+
+#gamePageFeatureGrid {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "a a";
+    font-family: "Poppins";
+    color: var(--description-color);
+    place-items: top;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.featureImg {
+    max-width: 100%;
+    /* border-radius: 10px; */
+    border: 8px solid red;
+    border-image-source: url(./images/UIContainerBorderSmall.webp); 
+    border-image-slice: 8;
+}
+
+.featureText {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#videoGridContainer {
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-areas: "a a";
+    gap: 20px;
+
+    align-items: center;
+    place-items: center;
+
+    max-width: 1000px;
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+#videoGridContainerVideo{
+    background-color: black;
+
+    max-width: 480px;
+    max-height: 270px;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    border: 2px solid red;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+#videoScreenshot{
+    opacity: 0.3;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+
+    transform: scale(1.0, 1.0);
+
+    transition: transform 0.15s ease-in-out;
+}
+
+#videoScreenshot.hover{
+    opacity: 0.75;
+
+    transform: scale(1.25, 1.25);
+}
+
+#videoPlayButton{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    opacity: 1.0;
+
+    transform: translate(-50%, -50%) scale(1.0, 1.0);
+
+    transition: transform 0.15s ease-in-out;
+}
+
+#videoPlayButton.hover{
+    transform: translate(-50%, -50%) scale(1.25, 1.25);
+}
+
+#videoTitle{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    color: var(--description-color);
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.75);
+
+    transition: color 0.15s ease-in-out;
+}
+
+#videoTitle.hover{
+    color: var(--descriptionHover-color);
+}
+
+#gamePageMediaContainer {
+    max-width: 1000px;
+    width: 90%;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    margin: 0 auto;
+    border: 6px solid white;
+    border-radius: 10px;
+
+    background-color: rgba(0,0,0,0.5);
+
+    border-image: url("./images/UIContainerBorderSmall.webp");
+    border-image-slice: 8;
+    border-image-repeat: repeat;
+}
+
+.screenshotSection {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    border-radius: 6px;
+}
+
+.screenshotHeader{
+    font-family: "Poppins";
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#mediaGridContainer{
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-areas: "a a a";
+    gap: 10px;
+    padding: 20px;
+
+    justify-items: center;
+}
+
+.hoverablePictureHolder{
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.hoverablePicture{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+
+    transform: scale(1.0, 1.0);
+    transition: transform 0.15s ease-in-out;
+    opacity: 0.75;
+}
+
+.hoverablePicture.hover{
+    transform: scale(1.15, 1.15);
+    opacity: 1.0;
+}
+
+#gamePageSteamWidget{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 646px;
+    margin-top: 40px;
+}
+
+#gamePageSteamWidgetMobile{
+    display: none;
+}
+
+@media (width >= 3840px){
+
+    #gamePageBg02{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+/*------------------GAME PAGE HEADER-------------------*/
+#gamePageHeader{
+    min-height: 500px;
+}
+
+/*------------------PLATFORM AND RELEASE DATE-------------------*/
+
+#platformAndReleaseDate{
+    box-sizing: border-box;
+    width: 100%;
+    grid-template-areas: "a";
+    padding: 20px;
+}
+
+#platformContainer{
+    place-self: start;
+    padding: 0;
+}
+
+
+#releaseDateContainer{
+    place-self: start;
+    padding: 0;
+}
+
+/*------------------GAME DESCRIPTION-------------------*/
+
+#gamePageDescription{
+    box-sizing: border-box;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/*------------------GAME FEATURES-------------------*/
+
+#gamePageFeatureGrid{
+    padding: 0;
+    grid-template-areas: "a";
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2px;
+}
+
+.gamePageFeatureGridItem{
+    place-items: center;
+    display: grid;
+    grid-template-areas: "a";
+    
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.featureImg{
+    margin: 0;
+    max-width: 350px;
+    width: 100%;
+}
+
+.featureText{
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+/*------------------MEDIA-------------------*/
+
+#gamePageMediaContainer{
+    width: 95%;
+    padding: 0;
+}
+
+#videoGridContainer{
+    grid-template-areas: "a";
+}
+
+#videoGridContainerVideo{
+    width: 100%;
+    height: 100%;
+    max-width:  480px;
+}
+
+#videoScreenshot{
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+#mediaGridContainer{
+    grid-template-areas: "a";
+}
+
+#videoTitle{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/*------------------STEAM WIDGET-------------------*/
+#gamePageSteamWidget {
+    display: none;
+}
+
+#gamePageSteamWidgetMobile {
+
+        display: block;
+
+        max-width: 370px;
+        width: 90%;
+
+        min-height: 230px;
+
+        margin: 0 auto;
+    
+        box-sizing: border-box;
+    
+        padding: 20px;
+    }
+}

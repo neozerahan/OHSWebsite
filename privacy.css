@@ -1,0 +1,54 @@
+:root{
+    --ohs-green: rgba(197,206, 78,1);
+    --description-color: rgba(170, 170, 170, 1);
+}
+
+body{
+    font-family: "Poppins";
+    background-image: url("images/AboutUsBg.webp");
+}
+
+h1{
+    color: var(--ohs-green);
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+p, ul{
+   color: var(--description-color) 
+}
+
+
+footer{
+    background-color: black;
+}
+
+#privacyPolicyBody {
+    padding-top: 70px;
+    max-width: 1280px;
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+#privacyPolicyContainer{
+    padding: 30px;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--description-color)
+}
+
+@media screen and (max-width: 780px) {
+
+    #privacyPolicyDescription {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ogre Head Studio | Indie Video Game Developer & Service Provider</title>
+    <meta name="description"
+        content="Ogre Head Studio is an indie video game developer and service provider based in Hyderabad, India, making games inspired by Indian folklore">
+
+    <meta name="author" content="Ogre Head Studio">
+
+    <meta name="keywords"
+        content=" indie, video game company, game art, game design, co-dev, game development, video game service">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ogre Head Studio">
+    <meta property="og:site_name" content="Ogre Head Studio">
+    <meta property="og:description"
+        content="Indie video game developer and service provider creating games inspired by Indian folklore.">
+    <meta property="og:image" content="https://www.ogrehead.com/images/webPreview.webp">
+    <meta property="og:url" content="https://www.ogrehead.com">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+    <script src="common.js" defer></script>
+    <script src="form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="./images/AsuraVengeancePoster.webp" as="image" media="(min-width: 781px)"
+        fetchpriority="high">
+    <link rel="preload" href="./images/AsuraPosterMobile.webp" as="image" media="(max-width: 780px)"
+        fetchpriority="high">
+
+    <link rel="preload" href="./images/YodhaBattlePoster.webp" as="image" media="(min-width: 781px)"
+        fetchpriority="high">
+    <link rel="preload" href="./images/YodhaPosterMobile.webp" as="image" media="(max-width: 780px)"
+        fetchpriority="high">
+
+    <link rel="preload" href="./images/metalBorder.webp" as="image" fetchpriority="high">
+
+</head>
+
+
+<body>
+
+    <div id="consentFormContainer">
+        <h1 id="consentFormHeader">We Use Cookies</h1>
+
+        <p id="consentFormDescription"> We use Google Analytics to understand website traffic and improve our website. Read our
+            <a href="privacyPolicy.html">privacy policy</a> for more information. 
+            <br><br>
+            You can choose whether to allow analytics cookies.
+        </p>
+
+        <button id="consentFormAcceptButton">Accept</button>
+        <button id="consentFormDenyButton">Deny</button>
+    </div>
+
+    <div id="overlay"> </div>
+
+<nav>
+    <div id="navBar">
+        <div id="navBarLeft">
+            <a href="index.html">
+                <img id="navBarOhsLogo" src="images/OgreHeadStudioHorizontalLogoColor128.webp"
+                    alt="logo of Ogre Head Studio">
+            </a>
+    
+            <h1 id="navBarLogoSubtitle"> An Indie Video Game Developer & Service Provider </h1>
+        </div>
+    <div id="navBarRight">
+        <div class="navBarButtons">
+            <div class="navBarText"> <a href="index.html">Home</a>
+                <div class="navBarButtonUnderline"></div>
+            </div>
+        </div>
+
+        <div class="navBarButtons">
+            <div id="ourGamesNavButton">
+                <div class="navBarText">Our Games
+                    <div class="navBarButtonUnderline"></div>
+        
+                    <div id="gameNavDropDown">
+
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="#gameYodha">Yodha</a></p>
+                        </div>
+        
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="asura.html">Asura</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navBarButtons">
+            <div id="aboutUsNavButton">
+                <div class="navBarText">
+                    <a href="#aboutUsSection">About Us</a>
+                    <div class="navBarButtonUnderline"></div>
+                    <div id="aboutUsNavDropDown">
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="#servicesSection">Services</a></p>
+                        </div>
+
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="#trustedPartnerSection">Clients</a></p>
+                        </div>
+        
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="#accoladesSection">Accolades</a></p>
+                        </div>
+
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="#gallerySection">Gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navBarButtons">
+
+            <div class="navBarText"><a href="#formContainer">Contact Us</a>
+                <div class="navBarButtonUnderline"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navBarRightMobile">
+        <img id="burgerIcon" src="./images/BurgerMenu.webp" alt="a burger menu icon for mobile UI/UX">
+        <div id="burgerMenu">
+            <div id="burgerMenuClipRect">
+                <a href="index.html">
+                    <div id="burgerMenuText"> HOME </div>
+                </a>
+
+                <a href="#gameYodha">
+                    <div id="burgerMenuText">YODHA</div>
+                </a>
+                <a href="asura.html">
+                    <div id="burgerMenuText">ASURA</div>
+                </a>
+                <a href="#aboutUsSection">
+                    <div id="burgerMenuText">ABOUT US</div>
+                </a>
+                <a href="#servicesSection">
+                    <div id="burgerMenuText">SERVICES</div>
+                </a>
+                <a href="#formContainer">
+                    <div id="burgerMenuText">CONTACT US</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+</nav>
+
+    <div id="gameYodha">
+        <div id="gameYodhaLogoBox">
+            <img id="gameYodhaLogoImg" src="images/YodhaLogo.webp" alt="Yodha logo">
+            <p id="gameDescription"> Yodha is a turn-based deck-builder set in a fantasy world inspired by Indian
+                folklore.</p>
+            <p id="gameDescription"> More information coming soon!</p>
+        </div>
+    </div>
+
+    <div class="metalBorder">
+    </div>
+    
+    <div id="gameAsura">
+        <div id="gameAsuraLogoBox">
+            <img id="gameAsuraLogoImg" src="images/AsuraLogo.webp" alt="Asura logo">
+    
+            <p id="gameDescription"> Asura is an Action Rogue-like set in a fantasy world inspired by the richness of
+                Indian
+                mythology. It features a unique procedural skill tree which changes on every play-through.</p>
+    
+            <div id="learnMoreButton">
+                <a href="asura.html"><img id="learnMoreButtonImg" src="images/Button01.webp" alt="a red button">
+                <p id="learnMoreButtonText">Learn More!</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="metalBorder">
+    </div>
+    
+
+    <div id="aboutUsAndServicesSection">
+    <div id="aboutUsSection">
+        <div>
+            <h2 id="homePageHeader">About Us</h2>
+        </div>
+    
+        <div id="aboutUsGrid">
+            <img id="aboutUsOhsLogo" src="images/OgreHeadStudioLogoAboutUs.webp" alt="a logo of ogre head studio">
+            <p id="aboutUsDescription">
+                <span id="aboutUsDescriptionMain">Ogre Head Studio (OHS) is an independent video game development studio based in Hyderabad, India, founded in 2014 by Zainuddeen 'Zain' Fahadh.</span>
+                <br><br>
+We create original video games inspired by India's diverse folklore, mythology, culture, and traditions. Our goal is to bring unique Indian stories and worlds to a global audience through engaging gameplay, distinctive art, and thoughtful game design.
+                <br><br>
+In addition to developing our own games, we provide professional game development services to studios and companies around the world, including game art, design, development, and co-development.
+                <br><br>
+Ogre Head Studio is a bootstrapped and independently operated game development company with no external funding. We are a creative team passionate about building original games from India for players around the world.
+            </p>
+        </div>
+    </div>
+
+    <div id="servicesSection">
+        <div>
+            <h2 id="homePageSubHeader">Our Services</h2>
+        </div>
+    
+        <div id="servicesGrid">
+            <div id="servicesGridContent" class="color01">
+                <img id="servicesGridContentImg" src="images/ServicesIconGameArt.webp" alt="game art services icon with Ogre Head logo">
+
+                <h3 id="servicesGridContentHeader">GAME ART</h3>
+                <p id="servicesGridContentDescription">
+                    Our artists create high-quality 2D and 3D game art across a range of visual styles, from stylized to realistic, 
+                    tailored to your project's artistic direction. From concept art and illustrations to 3D character models, environments, and props, we deliver art assets that bring your game world to life.
+                </p>
+                </div>
+
+            <div id="servicesGridContent" class="color02">
+                <img id="servicesGridContentImg" src="images/ServicesIconGameDesign.webp" alt="game design services icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">GAME DESIGN</h3>
+                <p id="servicesGridContentDescription">
+                    "Gameplay is king!" is our motto. We bring extensive experience in designing engaging gameplay 
+                    systems, immersive game worlds, compelling narratives, intuitive UI/UX, and balanced game economies, 
+                    tailored to the unique needs of your project.
+                </p>
+                </div>
+    
+            <div id="servicesGridContent" class="color01">
+                <img id="servicesGridContentImg" src="images/ServicesIconGameDevelopment.webp"
+                    alt="Game development services icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">GAME DEV</h3>
+                <p id="servicesGridContentDescription">
+                    We develop games using industry-leading engines such as Unity and Unreal Engine. Our developers bring 
+                    strong programming expertise in C, C++, and C#, delivering robust gameplay systems and technical 
+                    solutions tailored to your project's requirements.
+                </p>
+            </div>
+    
+            <div id="servicesGridContent" class="color02">
+                <img id="servicesGridContentImg" src="images/ServicesIconTechArt.webp" alt="Game tech art services icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">TECH ART</h3>
+                <p id="servicesGridContentDescription">
+                    Our tech team brings together engineering expertise and artistic sensibility. We create captivating 
+                    visual effects, develop optimized shaders, and build custom tools and pipelines that streamline 
+                    development and bring creative visions to life.
+                </p>
+            </div>
+    
+            <div id="servicesGridContent" class="color02">
+                <img id="servicesGridContentImg" src="images/ServicesIconCodevelopment.webp" alt="Game co development services icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">CO-DEV</h3>
+                <p id="servicesGridContentDescription">
+                    Missing a skill set or an extra pair of hands on your team? We've got you covered. Whether you need 
+                    specialised talent or additional development support, we can help bring your game to life. Get in 
+                    touch with us for a quote, and let's build something epic together!
+</p>
+            </div>
+    
+            <div id="servicesGridContent" class="color01">
+                <img id="servicesGridContentImg" src="images/ServicesIconEndtoEndDevelopment.webp" alt="Game end to end development services icon with Ogre Head logo" >
+                <h3 id="servicesGridContentHeader">END-TO-END DEV</h3>
+                <p id="servicesGridContentDescription">
+                    Have a game idea you'd love to bring to life? We're a one-stop shop for game development, offering 
+                    everything you need to turn your vision into a playable reality. Let's build something epic together!
+                </p>
+            </div>
+    
+            <div id="servicesGridContent" class="color02">
+                <img id="servicesGridContentImg" src="images/ServicesIconForIndiesAndAAA.webp"
+                    alt="An indies to AAA development services icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">FOR INDIES & AAA</h3>
+                <p id="servicesGridContentDescription">
+                    Whether you're a solo developer or a large game studio, if you're passionate about your project, 
+                    we'd love to be part of your journey and help bring it to life.
+                    </p>
+                </div>
+            <div id="servicesGridContent" class="color01">
+                <img id="servicesGridContentImg" src="images/ServicesIconConsultation.webp" alt="Game services consultation icon with Ogre Head logo">
+                <h3 id="servicesGridContentHeader">CONSULTATION</h3>
+                <p id="servicesGridContentDescription">
+                    Stuck in production or need an extra hand bringing your game to life? We're here to help. 
+                    Let's get your project moving!
+                </p>
+            </div>
+        </div>
+
+<div id="servicesContactUs">
+    <p id="servicesContactUsText"> <a id="servicesContactUsLink" href="#contactUsForm">Contact Us</a> for a quote or any queries!</p>
+</div>
+    </div>
+</div>
+    
+    <div id="trustedPartnerSection">
+
+        <div id="trustedPartnerSubheader">Clients</div>
+    
+        <div id="trustedPartnersGrid">
+            <img id="trustedPartnersImg" src="images/LogoDC.webp" alt="DC logo">
+            <img id="trustedPartnersImg" src="images/LogoGamasome.webp" alt="Gamesome logo">
+            <img id="trustedPartnersImg" src="images/LogoJunctureMedia.webp" alt="Juncture media logo">
+            <img id="trustedPartnersImg" src="images/LogoNick.webp" alt="Nicklodeon logo">
+            <img id="trustedPartnersImg" src="images/LogoParamount.webp" alt="Paramount logo">
+            <img id="trustedPartnersImg" src="images/LogoPHL.webp" alt="PHL logo">
+            <img id="trustedPartnersImg" src="images/LogoQuickSand.webp"alt="Quicksand logo" >
+            <img id="trustedPartnersImg" src="images/LogoWB.webp" alt="WB or Warner brothers logo">
+        </div>
+        <div id="trustedPartnersGrid02">
+            <img id="trustedPartnersImg" src="images/LogoMattel.webp" alt="Mattel logo">
+            <img id="trustedPartnersImg" src="images/LogoDreadXp.webp" alt="Dread Xp logo">
+            <img id="trustedPartnersImg" src="images/LogoScholastic.webp" alt="Scholastic logo">
+        </div>
+    
+    </div>
+
+    <div id="aboutUsAndServicesSection">
+    
+    <div id="accoladesSection">
+        <div id="homePageSubHeader">Accolades</div>
+    
+        <div id="awardsGrid">
+            <img id="accoladesImg" src="images/AwardsAnimationXpress.webp" alt="animation xpress award logo">
+            <img id="accoladesImg" src="images/AwardsBitsummit.webp" alt="Bits Summit award logo">
+            <img id="accoladesImg" src="images/AwardsGameIndustryBiz.webp" alt="Game Industry Biz award logo">
+            <img id="accoladesImg" src="images/AwardsIndianExpress.webp" alt="Indian Express award logo">
+            <img id="accoladesImg" src="images/AwardsNasscomGOTY.webp" alt="Nasscom Game Of The Year award logo">
+            <img id="accoladesImg" src="images/AwardsNasscomUpcoming.webp" alt="Nasscom Upcoming Game of the Year award logo">
+        </div>
+    
+    </div>
+    <div id="gallerySection">
+        <div id="homePageSubHeader">Gallery</div>
+    
+        <div id="galleryCarouselMainPicGrid">
+            <div id="galleryLeftArrow">
+                <img src="images/arrowLeft.webp" class="arrowImage">
+            </div>
+        
+            <div id="galleryCarouselMainPicContainer">
+              <a id="galleryMainPicLink" href="images/Gallery01.webp" target="_blank"><img id="galleryMainPic" src="images/Gallery01.webp" alt="a picture of Zain, the founder of Ogre Head Studio, speaking on stage at Gamescom Asia 2024"></a>
+            </div>
+        
+            <div id="galleryRightArrow">
+                <img src="images/arrowRight.webp" class="arrowImage">
+            </div>
+        </div>
+
+        <div id="galleryCarouselContainer">
+            <img id="gallerySlidePic" src="images/Gallery01.webp" alt="a picture of Zain, the founder of Ogre Head Studio, speaking on stage at Gamescom Asia 2024">
+            <img id="gallerySlidePic" src="images/Gallery02.webp" alt="a picture of Zain, the founder of Ogre Head Studio, receiving the Indian Express Award from former IT minister, Kalvakuntla Taraka Rama Rao also known as KTR.">
+            <img id="gallerySlidePic" src="images/Gallery03.webp" alt="a picture of Zain, the founder of Ogre Head Studio, receiving award from world malayali council.">
+            <img id="gallerySlidePic" src="images/Gallery04.webp" alt="a picture of Zain, the founder of Ogre Head Studio, speaking at IGDC 2024.">
+            <img id="gallerySlidePic" src="images/Gallery05.webp" alt="a picture of Zain, the founder of Ogre Head Studio, at Bit Summit, Japan.">
+            <img id="gallerySlidePic" src="images/Gallery06.webp" alt="a picture of Zain, the founder of Ogre Head Studio, giving a speech.">
+        </div>
+
+        <div id="galleryCarouselContainerMobile">
+            <a href="images/Gallery01.webp"><img id="gallerySlidePic" src="images/Gallery01.webp" alt="a picture of Zain, the founder of Ogre Head Studio, speaking on stage at Gamescom Asia 2024"></a>
+            <a href="images/Gallery02.webp"><img id="gallerySlidePic" src="images/Gallery02.webp" alt="a picture of Zain, the founder of Ogre Head Studio, receiving the Indian Express Award from former IT minister, Kalvakuntla Taraka Rama Rao also known as KTR."></a>
+            <a href="images/Gallery03.webp"><img id="gallerySlidePic" src="images/Gallery03.webp" alt="a picture of Zain, the founder of Ogre Head Studio, receiving award from world malayali council."></a>
+            <a href="images/Gallery04.webp"><img id="gallerySlidePic" src="images/Gallery04.webp" alt="a picture of Zain, the founder of Ogre Head Studio, speaking at IGDC 2024."></a>
+            <a href="images/Gallery05.webp"><img id="gallerySlidePic" src="images/Gallery05.webp" alt="a picture of Zain, the founder of Ogre Head Studio, at Bit Summit, Japan."></a>
+            <a href="images/Gallery06.webp"><img id="gallerySlidePic" src="images/Gallery06.webp" alt="a picture of Zain, the founder of Ogre Head Studio, giving a speech."></a>
+        </div>
+
+        </div>
+
+
+    <div id="formContainer">
+        <div id="homePageSubHeader">Contact Us</div>
+
+        <form id="contactUsForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="3f07eddd-11ec-4a10-9c24-9403abccec3f">
+
+            <div id="formGrid">
+                <label for="formName">Name</label>
+                <input type="text" id="formName" name="name" value="Enter your name..." required>
+        
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" name="email" value="email@youremail.com" required>
+            </div>
+        
+            <textarea id="formMessage" name="message" rows="4" cols="50">Enter your message here...</textarea><br>
+        
+            <div id="formMessageTextContent">
+                <div id="formNotificationMsg">Message must contain min. 25 characters...</div>
+                <div id="formMessageCount">0/250</div>
+            </div>
+        
+            <div id="buttonColumn">
+                <button id="formSubmitButton" type="button">Submit</button>
+            </div>
+        
+            <div id="formSubtitle">Or write to us at support(at)ogrehead(dot)com</div>
+            <div id="formPrivacyNotice">
+                We respect your privacy and will never sell or share your personal information with third parties. 
+                By submitting this form, you acknowledge and agree to our Privacy Policy. 
+                <br><br>
+                To learn more about how we handle your information, please read our <a href="privacyPolicy.html">Privacy Policy</a>.
+            </div>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="footerLogoContainer">
+
+                <a href="index.html">
+                    <img id="footerImg" src="images/OgreHeadStudioHorizontalLogoColor128.webp"
+                        alt="An Ogre Head Studio logo with horizontal design">
+                </a>
+
+                <p id="footerDescription">We make games since 2014 from Hyderabad, India.</p>
+            </div>
+            <div id="footerDisclaimer">
+                <p id="footerDisclaimerText">All rights reserved. Ogre Head Studio @ 2026</p>
+
+                <span id="footerSeprator"></span>
+
+                <a href="privacyPolicy.html"><p id="footerPrivacyLink">Privacy Policy</p></a>
+
+                <span id="footerSeprator"></span>
+
+                <p id="footerCookieSettings">Cookie Settings</p>
+            </div>
+            <div id="footerSocialMediaContainer">
+                <p>Follow us on:</p>
+
+                <a href="https://www.linkedin.com/company/ogreheadstudio" target="_blank">
+                    <img class="socialIcon" src="images/SocialsLinkedIn.webp" alt="LinkedIn social media Icon">
+                </a>
+                
+                <a href="https://www.youtube.com/@ogreheadstudio9254" target="_blank">
+                    <img class="socialIcon" src="images/SocialsYoutube.webp" alt="Youtube social media Icon">
+                </a>
+                
+                </div>
+        </div>
+
+        <div id="footerContainerMobile">
+            <div id="footerSocialMediaContainer">
+                <p>Follow us on:</p>
+
+                <a href="https://www.linkedin.com/company/ogreheadstudio" target="_blank">
+                    <img class="socialIcon" src="images/SocialsLinkedIn.webp" alt="LinkedIn social media Icon">
+                </a>
+                
+                <a href="https://www.youtube.com/@ogreheadstudio9254" target="_blank">
+                    <img class="socialIcon" src="images/SocialsYoutube.webp" alt="Youtube social media Icon">
+                </a>
+                
+            </div>
+
+            <div id="footerDisclaimerTextMobileContainer">
+                <div class="footerLinks">
+                    <a href="privacyPolicy.html" target="_blank">
+                        <p>Read our Privacy Policy</p>
+                    </a>
+                </div>
+
+                <div class="footerLinks">
+                    <p id="footerCookieSettings">Cookie Settings</p>
+                </div>
+
+                <p> All rights reserved. Ogre Head Studio @ 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+
+    
+    </html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asura - Ogre Head Studio</title>
+
+    <meta name="description" content="Asura is an indie action, roguelike game with procedural skill tree, based in an 
+        original fantasy world inspired by Indian foklore and stories. ">
+
+    <meta name="author" content="Ogre Head Studio">
+
+    <meta name="keywords" content=" asura, demon, roguelike, indie, indian, procedural">
+
+    <link rel="icon" type="image/x-icon" href="images/AsuraFavicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gamePageStyle.css">
+
+    <script src="common.js" defer></script>
+    <script src="gamePage.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="./images/AsuraVengeancePoster.webp" as="image" fetchpriority="high">
+
+    <link rel="preload" href="./images/metalBorder.webp" as="image" fetchpriority="high">
+</head>
+
+<body>
+
+    <div id="consentFormContainer">
+        <h1 id="consentFormHeader">We Use Cookies</h1>
+
+        <p id="consentFormDescription"> We use Google Analytics to understand website traffic and improve our website. Read our
+            <a href="privacyPolicy.html">privacy policy</a> for more information. 
+            <br><br>
+            You can choose whether to allow analytics cookies.
+        </p>
+
+        <button id="consentFormAcceptButton">Accept</button>
+        <button id="consentFormDenyButton">Deny</button>
+    </div>
+
+    <div id="overlay"> </div>
+    <div id="backgroundColor"></div>
+    
+    <nav>
+        <div id="navBar">
+            <div id="navBarLeft">
+                <a href="index.html">
+                    <img id="navBarOhsLogo" src="images/OgreHeadStudioHorizontalLogoColor128.webp" alt="logo of Ogre Head Studio">
+                </a>
+    
+                <h1 id="navBarLogoSubtitle"> An Indian Indie Video Game Developer & Service Provider </h1>
+            </div>
+    
+            <div id="navBarRight">
+                <div class="navBarButtons">
+                    <div class="navBarText"> <a href="index.html">Home</a>
+                        <div class="navBarButtonUnderline"></div>
+                    </div>
+                </div>
+            
+                <div class="navBarButtons">
+                    <div id="ourGamesNavButton">
+                        <div class="navBarText">Our Games
+                            <div class="navBarButtonUnderline"></div>
+            
+                            <div id="gameNavDropDown">
+                                <div id="gameNavDropDownTextContainer">
+                                    <p id="gameNavDropDownText"><a href="index.html#gameYodha">Yodha</a></p>
+                                </div>
+            
+                                <div id="gameNavDropDownTextContainer">
+                                    <p id="gameNavDropDownText"><a href="index.html#asura">Asura</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        <div class="navBarButtons">
+            <div id="aboutUsNavButton">
+                <div class="navBarText">
+                    <a href="index.html#aboutUsSection">About Us</a>
+                    <div class="navBarButtonUnderline"></div>
+                    <div id="aboutUsNavDropDown">
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="index.html#servicesSection">Services</a></p>
+                        </div>
+        
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="index.html#trustedPartnerSection">Clients</a></p>
+                        </div>
+        
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="index.html#accoladesSection">Accolades</a></p>
+                        </div>
+        
+                        <div id="gameNavDropDownTextContainer">
+                            <p id="gameNavDropDownText"><a href="index.html#gallerySection">Gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navBarButtons">
+            <div class="navBarText"><a href="index.html#formContainer">Contact Us</a>
+                <div class="navBarButtonUnderline"></div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="navBarRightMobile">
+            <img id="burgerIcon" src="./images/BurgerMenu.webp">
+            <div id="burgerMenu">
+                    <div id="burgerMenuClipRect">
+                        <a href="index.html">
+                            <div id="burgerMenuText"> HOME </div>
+                        </a>
+    
+                        <a href="index.html#gameYodha">
+                            <div id="burgerMenuText">YODHA</div>
+                        </a>
+    
+                        <a href="asura.html">
+                            <div id="burgerMenuText">ASURA</div>
+                        </a>
+    
+                        <a href="index.html#aboutUsSection">
+                            <div id="burgerMenuText">ABOUT US</div>
+                        </a>
+    
+                        <a href="index.html#servicesSection">
+                            <div id="burgerMenuText">SERVICES</div>
+                        </a>
+    
+                        <a href="index.html#formContainer">
+                            <div id="burgerMenuText">CONTACT US</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+    </nav>
+    
+    <div id="gamePageHeader">
+        <!-- <div id="gamePagePoster">
+            <img src="images/AsuraVengeancePoster.webp">
+        </div> -->
+        <div id="gameLogo"><img src="images/AsuraLogo.webp"></div>
+    </div>
+    <div class="metalBorder">
+    </div>
+
+        <div id="gamePageInfo">
+            <div id="platformAndReleaseDate">
+            <div id="platformContainer">
+                <div id="prHeader">Platforms:</div>
+                <div id="platformIcons">
+                    <a href="https://store.steampowered.com/app/524640/">
+                        <img src="images/IconPlatformSteam.webp" alt="steam icon">
+                    </a>
+                    <a href="https://www.gog.com/en/game/asura" >
+                        <img src="images/IconPlatformGog.webp" alt="gog icon">
+                    </a>
+                </div>
+            </div>
+    
+            <div id="releaseDateContainer">
+                <div id="prHeader">Release Date:</div>
+                <div id="releaseDateText"> 14th April, 2017 </div>
+            </div>
+        </div>
+    
+    
+        <div id="gamePageDescription">
+            Asura is an Action Rogue-like set in a fantasy world inspired by the richness of
+            Indian mythology. It features a unique procedural skill tree which changes on every play-through.
+        </div>
+    
+        <div id="gamePageFeatureContainer">
+            <div id="homePageHeader">Features</div>
+            <div id="gamePageFeatureGrid">
+                <div class="gamePageFeatureGridItem">
+                    <img class="featureImg" src="images/AsuraChakra.webp" alt="A screenshot of Asura's character selection screen.">
+                    <div class="featureText">Rogue-lite</div>
+                </div>
+
+                <div class="gamePageFeatureGridItem">
+                    <img class="featureImg" src="images/AsuraHackAndSlash.webp" alt="An in-game screenshot of Asura battling the enemies.">
+                    <div class="featureText">Hack & Slash</div>
+                </div>
+
+                <div class="gamePageFeatureGridItem">
+                    <img class="featureImg" src="images/AsuraSkillTree.webp" alt="A screenshot of the procedural skill tree in Asura.">
+                    <div class="featureText">Procedural skill tree</div>
+                </div>
+
+                <div class="gamePageFeatureGridItem">
+                    <img class="featureImg" src="images/AsuraAncientIndianStories.webp" alt="An illustration of the prophet from the cinematic of Asura.">
+                    <div class="featureText">Inspired By Ancient Indian Stories</div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="gamePageMediaContainer">
+
+            <div id="homePageHeader">Media</div>
+
+                <div class="screenshotHeader">Trailers</div>
+
+            <div id="videoGridContainer">
+
+                <div id="videoGridContainerVideo">
+                    <a href="https://www.youtube.com/watch?v=5WUmmwzNhpU">
+                        <img id="videoScreenshot" src="images/AsuraCinematicTrailer.webp" alt="A thumbnail for Asura Cinematic Trailer">
+                        <img id="videoPlayButton" src="images/YoutubePlay.webp" alt="Youtube Play Icon">
+                        <p id="videoTitle">Play Cinematic Trailer</p>
+                    </a>
+                </div>
+
+                <div id="videoGridContainerVideo">
+                    <a href="https://www.youtube.com/watch?v=o89jyiRNuvg">
+                        <img id="videoScreenshot" src="images/AsuraGameplayTrailer.webp" alt="A thumbnail for Asura Gameplay Trailer">
+                        <img id="videoPlayButton" src="images/YoutubePlay.webp" alt="Youtube Play Icon">
+                        <p id="videoTitle">Play Gameplay Trailer</p>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="screenshotSection">
+
+                <div class="screenshotHeader">Screenshots</div>
+            <div id="mediaGridContainer">
+                <a href="images/AsuraScreenshot01.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenShot01.webp" alt="An in-game screenshot of Asura combating a boss on the fortress">
+                    </div>
+                </a>
+            
+                <a href="images/AsuraScreenshot02.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenshot02.webp" alt="An in-game screenshot of Asura combating the Hathira enemies on the fortress">
+                    </div>
+                </a>
+            
+                <a href="images/AsuraScreenshot03.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenshot03.webp" alt="An in-game screenshot of Asura combating enemies in level 02">
+                    </div>
+                </a>
+            
+                <a href="images/AsuraScreenshot04.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenshot04.webp" alt="An in-game screenshot of Asura combating in the arena.">
+                    </div>
+                </a>
+            
+                <a href="images/AsuraScreenshot05.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenshot05.webp" alt="An in-game screenshot of Asura attempting to avoid getting hit by an enemy frost cannon.">
+                    </div>
+                </a>
+            
+                <a href="images/AsuraScreenshot06.webp" target="_blank">
+                    <div class="hoverablePictureHolder">
+                        <img class="hoverablePicture" src="images/AsuraScreenshot06.webp" alt="An screenshot of the procedural skill tree.">
+                    </div>
+                </a>
+                </div>
+            </div>
+
+        </div>
+    
+        <div id="gamePageSteamWidget">
+            <iframe src="https://store.steampowered.com/widget/524640/" alt="Asura Steam widget with a buy now button" frameborder="0" width="646" height="190"></iframe>
+        </div>
+
+        <div id="gamePageSteamWidgetMobile">
+            <iframe src="https://store.steampowered.com/widget/524640/" alt="Asura Steam widget with a buy now button" frameborder="0" width="320" height="190"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="footerLogoContainer">
+
+                <a href="index.html">
+                    <img id="footerImg" src="images/OgreHeadStudioHorizontalLogoColor128.webp"
+                        alt="An Ogre Head Studio logo with horizontal design">
+                </a>
+
+                <p id="footerDescription">We make games since 2014 from Hyderabad, India.</p>
+            </div>
+            <div id="footerDisclaimer">
+                <p id="footerDisclaimerText">All rights reserved. Ogre Head Studio @ 2026</p>
+
+                <span id="footerSeprator"></span>
+
+                <a href="privacyPolicy.html"><p id="footerPrivacyLink">Privacy Policy</p></a>
+
+                <span id="footerSeprator"></span>
+
+                <p id="footerCookieSettings">Cookie Settings</p>
+            </div>
+            <div id="footerSocialMediaContainer">
+                <p>Follow us on:</p>
+
+                <a href="https://www.linkedin.com/company/ogreheadstudio" target="_blank">
+                    <img class="socialIcon" src="images/SocialsLinkedIn.webp" alt="LinkedIn social media Icon">
+                </a>
+                
+                <a href="https://www.youtube.com/@ogreheadstudio9254" target="_blank">
+                    <img class="socialIcon" src="images/SocialsYoutube.webp" alt="Youtube social media Icon">
+                </a>
+                
+                </div>
+        </div>
+
+        <div id="footerContainerMobile">
+            <div id="footerSocialMediaContainer">
+                <p>Follow us on:</p>
+
+                <a href="https://www.linkedin.com/company/ogreheadstudio" target="_blank">
+                    <img class="socialIcon" src="images/SocialsLinkedIn.webp" alt="LinkedIn social media Icon">
+                </a>
+                
+                <a href="https://www.youtube.com/@ogreheadstudio9254" target="_blank">
+                    <img class="socialIcon" src="images/SocialsYoutube.webp" alt="Youtube social media Icon">
+                </a>
+                
+            </div>
+
+            <div id="footerDisclaimerTextMobileContainer">
+                <div class="footerLinks">
+                    <a href="privacyPolicy.html" target="_blank">
+                        <p>Read our Privacy Policy</p>
+                    </a>
+                </div>
+
+                <div class="footerLinks">
+                    <p id="footerCookieSettings">Cookie Settings</p>
+                </div>
+
+                <p> All rights reserved. Ogre Head Studio @ 2026</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
